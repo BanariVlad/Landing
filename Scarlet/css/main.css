@@ -20,6 +20,7 @@ a{
 
 /*================= Header ==================*/
 
+
 .header-logo img{
     width: 300px;
 }
@@ -125,11 +126,12 @@ a{
 }
 
 .welcome-scrn h2{
+    color: #000;
     justify-self: center;
     font-size: 15px;
-
-
 }
+
+
 
 .best{
     grid-area: 1/3/2/4;
@@ -145,7 +147,40 @@ a{
 .lorem{
     grid-area: 3/2/4/5;
     align-self: flex-start;
+}
 
+.grid{
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-self: center;
+}
+
+.deliv{
+    grid-area: 4/2/5/3;
+}
+
+.grid h3{
+    grid-area: 3/2/4/3;
+}
+
+.grid img{
+    grid-area: 1/2/3/3;
+}
+
+.grid *{
+    justify-self: center;
+    align-self: center;
+}
+
+.garant{
+    grid-area: 4/3/5/4;
+}
+
+
+.cheap {
+    grid-area: 4/4/5/5;
 }
 
 
@@ -165,7 +200,7 @@ a{
 
 h1{
     grid-area: h1;
-    color: #ff8e67;
+    color: #E25F3E;
     justify-self: center;
     grid-area: 1/2/2/5;
     align-self: center;
