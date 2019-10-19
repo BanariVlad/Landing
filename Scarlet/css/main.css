@@ -489,10 +489,12 @@ h1{
 
 .items_img:hover img{
     opacity: 0.2;
+    cursor: pointer;
 }
 
 .items_img:hover h2{
     opacity: 1;
+    cursor: pointer;
 }
 
 .items_img h2{
@@ -715,7 +717,7 @@ h1{
 
 
 
-
+/* ===============CONTACT================*/
 
 
 
