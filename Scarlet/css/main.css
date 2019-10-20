@@ -805,13 +805,36 @@ input, button, textarea{
     box-shadow: 0 0 0 2px #fff, 0 0 0 4px #18CFAB;
 }
 
+/*=========FOOTER============*/
 
 
+footer{
+    height: 100px;
+    background: #1C2A33;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    color: #fff;
+}
+
+.street i, .telNumber i{
+    margin: 0 10px;
+    color: #18CFAB;
+    font-size: 20px;
+}
+
+.network i{
+    font-size: 25px;
+    margin: 0 10px;
+}
 
 
-
-
-
+.network i:hover{
+    color: #18CFAB;
+    cursor: pointer;
+}
 
 
 
