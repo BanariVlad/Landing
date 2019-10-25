@@ -94,7 +94,7 @@ h3 span{
     color: #18CFAB;
 }
 
-.header h1{
+.header h2{
     color: #fff;
     text-transform: uppercase;
     grid-area: 2/2/3/5;
@@ -210,12 +210,12 @@ h3 span{
     margin: 0 5%;
 }
 
-h1{
-    grid-area: h1;
+h2{
     color: #18CFAB;
     justify-self: center;
     grid-area: 1/2/2/5;
     align-self: center;
+    font-size: 26px;
 }
 
 .subheader p{
@@ -250,7 +250,7 @@ h1{
     background: #18CFAB;
 }
 
-.grafics h1{
+.grafics h2{
     grid-area: 2/1/3/2;
 }
 
@@ -393,50 +393,33 @@ h1{
 /*=================  FEATURES =================*/
 
 #services{
+    background-color: #1C2A33;
+    margin-top: 3vh;
+}
+
+#services h2{
     z-index: 50;
+    text-align: center;
+    padding: 70px;
+
+}
+
+#services ul{
+    padding: 0 5%;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 150px 30vh 30vh;
-    background-color: #1C2A33;
-    padding: 0 5%;
-    justify-items: center;
+    grid-template-rows: 30vh 30vh;
 }
 
-#services h1{
-    grid-area: 1/2/2/3;
-}
-
-#services li{
+#services ul li{
     display: grid;
     grid-template-columns: 1fr 2fr 2fr ;
     grid-template-rows: 30px 70px;
 }
 
-#services li:nth-child(2){
-    grid-area: 2/1/3/2;
-}
 
-#services li:nth-child(3){
-    grid-area: 2/2/3/3;
-}
-
-#services li:nth-child(4){
-    grid-area: 2/3/3/4;
-}
-
-#services li:nth-child(5){
-    grid-area: 3/1/4/2;
-}
-
-#services li:nth-child(6){
-    grid-area: 3/2/4/3;
-}
-
-#services li:nth-child(7){
-    grid-area: 3/3/4/4;
-}
-
-#services li h2{
+#services ul li h2{
     font-family: 'Montserrat', sans-serif;
     grid-area: 1/2/2/4;
     font-size: 15px;
@@ -444,27 +427,31 @@ h1{
     color: #fff;
 }
 
-#services li  i{
+#services ul li i{
     color: #18CFAB;
     font-size: 30px;
     grid-area: 1/1/3/2;
     justify-self: center;
 }
 
-#services li p{
+#services ul li p{
     color: #aeaeae;
     grid-area: 2/2/3/4;
 }
 
-/*====================ITEMS====================*/
+/*==================== ITEMS ====================*/
 
 #items{
+
+    padding: 0 5%;
+}
+
+#items ul{
+    grid-area: 1/1/5/5;
+    grid-gap: 15px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 150px 250px 250px 250px;
-    grid-gap: 15px;
-    margin-bottom: 50px;
-    padding: 0 70px;
+    grid-template-rows: 225px 225px 225px;
 }
 
 #items *{
@@ -472,17 +459,17 @@ h1{
     transition: opacity 0.3s linear;
 }
 
-#items li:hover img{
+#items ul li:hover img{
     opacity: 0.2;
     cursor: pointer;
 }
 
-#items li:hover h2{
+#items ul li:hover h2{
     opacity: 1;
     cursor: pointer;
 }
 
-#items li h2{
+#items ul li h2{
     text-transform: uppercase;
     color: #fff;
     position: absolute;
@@ -493,58 +480,27 @@ h1{
     font-size: 16px;
 }
 
-#items li{
+#items ul li{
     background: linear-gradient(to bottom,#02D0AC,#1C2A33);
     position: relative;
 }
 
-#items li img{
+#items h2{
+    text-align: center;
+    padding: 70px;
+}
+
+#items ul li img{
     width: 100%;
     height: 100%;
 }
 
-#items h1{
-    grid-area: 1/2/2/4;
+#items ul li:nth-child(5){
+    grid-area: 2/1/3/3;
 }
 
-#items li:nth-child(11){
-    grid-area: 2/1/3/2;
-}
-
-#items li:nth-child(2){
-    grid-area: 2/2/3/3;
-}
-
-#items li:nth-child(3){
-    grid-area: 2/3/3/4;
-}
-
-#items li:nth-child(4){
-    grid-area: 2/4/3/5;
-}
-
-#items li:nth-child(5){
-    grid-area: 3/1/4/3;
-}
-
-#items li:nth-child(6){
-    grid-area: 3/3/4/5;
-}
-
-#items li:nth-child(7){
-    grid-area: 4/1/5/2;
-}
-
-#items li:nth-child(8){
-    grid-area: 4/2/5/3;
-}
-
-#items li:nth-child(9){
-    grid-area: 4/3/5/4;
-}
-
-#items li:nth-child(10){
-    grid-area: 4/4/5/5;
+#items ul li:nth-child(6){
+    grid-area: 2/3/3/5;
 }
 
 /* ===================REVIEWS================== */
@@ -559,7 +515,7 @@ h1{
     justify-items: center;
 }
 
-.reviews h1{
+.reviews h2{
     color: #fff;
     grid-area: 1/4/2/7;
 }
@@ -752,7 +708,7 @@ h1{
     grid-area: 2/2/3/3;
 }
 
-.reviews-content article{
+.reviews-content p{
     display: none;
     grid-area: 1/1/2/4;
 }
@@ -790,7 +746,7 @@ input, button, textarea{
     padding: 0 70px;
 }
 
-.contact h1{
+.contact h2{
     grid-area: 1/3/2/5;
 }
 
@@ -803,7 +759,7 @@ input, button, textarea{
     background: #18CFAB;
 }
 
-.contact article{
+.contact p{
     grid-area: 2/3/3/5;
     text-align: center;
     font-size: 15px;
